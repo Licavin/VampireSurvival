@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 129835918}
   - component: {fileID: 129835917}
   m_Layer: 5
-  m_Name: Player 2 (3)
+  m_Name: P2Apparence3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 293537629}
   - component: {fileID: 293537628}
   m_Layer: 5
-  m_Name: Player 2 (2)
+  m_Name: P2Apparence2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -552,7 +552,7 @@ GameObject:
   - component: {fileID: 435665968}
   - component: {fileID: 435665967}
   m_Layer: 5
-  m_Name: Blue P1
+  m_Name: P1ButtonA3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -622,9 +622,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1723622998}
+      - m_Target: {fileID: 1723623003}
         m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
-        m_MethodName: P13Clicked
+        m_MethodName: P1Apparence3Clicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -684,7 +684,7 @@ GameObject:
   - component: {fileID: 504687003}
   - component: {fileID: 504687002}
   m_Layer: 5
-  m_Name: Player 1 (4)
+  m_Name: P1Apparence4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -761,7 +761,7 @@ GameObject:
   - component: {fileID: 505049984}
   - component: {fileID: 505049983}
   m_Layer: 5
-  m_Name: White P1
+  m_Name: P1ButtonA1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -831,9 +831,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1723622998}
+      - m_Target: {fileID: 1723623003}
         m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
-        m_MethodName: P11Clicked
+        m_MethodName: P1Apparence1Clicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -947,7 +947,7 @@ GameObject:
   - component: {fileID: 670768701}
   - component: {fileID: 670768700}
   m_Layer: 5
-  m_Name: Red P1
+  m_Name: P1ButtonA2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1017,9 +1017,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1723622998}
+      - m_Target: {fileID: 1723623003}
         m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
-        m_MethodName: P12Clicked
+        m_MethodName: P1Apparence2Clicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1235,7 +1235,7 @@ GameObject:
   - component: {fileID: 703710514}
   - component: {fileID: 703710513}
   m_Layer: 5
-  m_Name: Player 1 (3)
+  m_Name: P1Apparence3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1312,7 +1312,7 @@ GameObject:
   - component: {fileID: 892896175}
   - component: {fileID: 892896174}
   m_Layer: 5
-  m_Name: P2 userame
+  m_Name: ///// P2 userame /////
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1475,82 +1475,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 892896172}
   m_CullTransparentMesh: 1
---- !u!1 &938329725
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 938329726}
-  - component: {fileID: 938329728}
-  - component: {fileID: 938329727}
-  m_Layer: 5
-  m_Name: ///////////////////
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &938329726
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 938329725}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1723623002}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.15244961, y: 0.279556}
-  m_AnchorMax: {x: 0.36200002, y: 0.77500004}
-  m_AnchoredPosition: {x: 0, y: -0.000015258789}
-  m_SizeDelta: {x: 0.000015258789, y: -0.000015258789}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &938329727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 938329725}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d2e8fd733ecc5fd4ba0652abd658b704, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &938329728
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 938329725}
-  m_CullTransparentMesh: 1
 --- !u!1 &938475759
 GameObject:
   m_ObjectHideFlags: 0
@@ -1630,7 +1554,7 @@ GameObject:
   - component: {fileID: 1042076018}
   - component: {fileID: 1042076017}
   m_Layer: 5
-  m_Name: Player 1 (2)
+  m_Name: P1Apparence2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1706,7 +1630,7 @@ GameObject:
   - component: {fileID: 1050793288}
   - component: {fileID: 1050793287}
   m_Layer: 5
-  m_Name: Player 2 (4)
+  m_Name: P2Apparence4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1853,7 +1777,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1323187381}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1723623003}
+        m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
+        m_MethodName: LaunchGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1323187381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1904,7 +1840,7 @@ GameObject:
   - component: {fileID: 1337192356}
   - component: {fileID: 1337192355}
   m_Layer: 5
-  m_Name: Player 1 (1)
+  m_Name: P1Apparence1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1981,7 +1917,7 @@ GameObject:
   - component: {fileID: 1489928876}
   - component: {fileID: 1489928875}
   m_Layer: 5
-  m_Name: White P2
+  m_Name: P2ButtonA1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2051,9 +1987,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1723622998}
+      - m_Target: {fileID: 1723623003}
         m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
-        m_MethodName: P21Clicked
+        m_MethodName: P2Apparence1Clicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2114,7 +2050,7 @@ GameObject:
   - component: {fileID: 1514055923}
   - component: {fileID: 1514055922}
   m_Layer: 5
-  m_Name: Black P2
+  m_Name: P2ButtonA4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2184,9 +2120,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1723622998}
+      - m_Target: {fileID: 1723623003}
         m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
-        m_MethodName: P24Clicked
+        m_MethodName: P2Apparence4Clicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2246,7 +2182,7 @@ GameObject:
   - component: {fileID: 1621869373}
   - component: {fileID: 1621869372}
   m_Layer: 5
-  m_Name: Player 2 (1)
+  m_Name: P2Apparence1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2322,7 +2258,7 @@ GameObject:
   - component: {fileID: 1723623001}
   - component: {fileID: 1723623000}
   - component: {fileID: 1723622999}
-  - component: {fileID: 1723622998}
+  - component: {fileID: 1723623003}
   m_Layer: 5
   m_Name: CharacterSelection
   m_TagString: Untagged
@@ -2330,26 +2266,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1723622998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1723622997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a228236b91ce3544a8775e3c9df4e70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  P11: {fileID: 1337192353}
-  P12: {fileID: 1042076015}
-  P13: {fileID: 703710511}
-  P14: {fileID: 504687001}
-  P21: {fileID: 1621869370}
-  P22: {fileID: 293537626}
-  P23: {fileID: 129835915}
-  P24: {fileID: 1050793286}
 --- !u!114 &1723622999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2434,7 +2350,6 @@ RectTransform:
   - {fileID: 670768699}
   - {fileID: 435665966}
   - {fileID: 1885024428}
-  - {fileID: 938329726}
   - {fileID: 892896173}
   - {fileID: 1621869371}
   - {fileID: 293537627}
@@ -2453,6 +2368,28 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1723623003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723622997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a228236b91ce3544a8775e3c9df4e70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player1:
+  - {fileID: 1337192353}
+  - {fileID: 1042076015}
+  - {fileID: 703710511}
+  - {fileID: 504687001}
+  Player2:
+  - {fileID: 1621869370}
+  - {fileID: 293537626}
+  - {fileID: 129835915}
+  - {fileID: 1050793286}
 --- !u!1 &1752523012
 GameObject:
   m_ObjectHideFlags: 0
@@ -2466,7 +2403,7 @@ GameObject:
   - component: {fileID: 1752523015}
   - component: {fileID: 1752523014}
   m_Layer: 5
-  m_Name: Red P2
+  m_Name: P2ButtonA2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2536,9 +2473,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1723622998}
+      - m_Target: {fileID: 1723623003}
         m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
-        m_MethodName: P22Clicked
+        m_MethodName: P2Apparence2Clicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3027,7 +2964,7 @@ GameObject:
   - component: {fileID: 1845373987}
   - component: {fileID: 1845373986}
   m_Layer: 5
-  m_Name: Blue P2
+  m_Name: P2ButtonA3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3097,9 +3034,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1723622998}
+      - m_Target: {fileID: 1723623003}
         m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
-        m_MethodName: P23Clicked
+        m_MethodName: P2Apparence3Clicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3160,7 +3097,7 @@ GameObject:
   - component: {fileID: 1885024430}
   - component: {fileID: 1885024429}
   m_Layer: 5
-  m_Name: Black P1
+  m_Name: P1ButtonA4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3230,9 +3167,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1723622998}
+      - m_Target: {fileID: 1723623003}
         m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
-        m_MethodName: P14Clicked
+        m_MethodName: P1Apparence4Clicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3377,7 +3314,7 @@ GameObject:
   - component: {fileID: 2028021757}
   - component: {fileID: 2028021756}
   m_Layer: 5
-  m_Name: P1 userame
+  m_Name: ///// P1 userame /////
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
