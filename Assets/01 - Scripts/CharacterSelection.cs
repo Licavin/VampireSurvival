@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Unity.Scee
 
 public class CharacterSelection : MonoBehaviour
 {
@@ -99,6 +98,6 @@ public class CharacterSelection : MonoBehaviour
 
     public void LaunchGame()
     {
-        SceneManager.LoadScene(1);
+        //SceneManager.LoadScene(1);
     }
 }
