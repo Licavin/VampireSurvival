@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6846860550696970905}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,7 +101,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.051449377, y: -0.05981277}
+  m_Offset: {x: -0.004982155, y: -0.028035529}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -112,7 +112,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32445523, y: 0.27843738}
+  m_Size: {x: 0.18231931, y: 0.2148829}
   m_EdgeRadius: 0
 --- !u!114 &3532367232766482233
 MonoBehaviour:
@@ -126,10 +126,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ee390d9aae58a34e89fde1886121dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpMax: 0
+  hpMax: 10
   speedDefault: 1
-  damageDefault: 0
+  damageDefault: 2
   target: {fileID: 5440158483812248283, guid: db401ef30b395a64cbe71b2d456584f8, type: 3}
+  onDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3532367232766482238}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onDamage:
+    m_PersistentCalls:
+      m_Calls: []
+  onCollision:
+    m_PersistentCalls:
+      m_Calls: []
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
+  baseColor: {r: 1, g: 1, b: 1, a: 1}
+  colorSpeed: 200
 --- !u!50 &2550115927059764610
 Rigidbody2D:
   serializedVersion: 4

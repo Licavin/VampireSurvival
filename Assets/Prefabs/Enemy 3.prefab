@@ -14,15 +14,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6392373701042865292, guid: 19fb1126baa90aa4393495149145a989, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.86179507
       objectReference: {fileID: 0}
     - target: {fileID: 6392373701042865292, guid: 19fb1126baa90aa4393495149145a989, type: 3}
       propertyPath: m_Color.g
-      value: 0.14668632
+      value: 0.3254717
       objectReference: {fileID: 0}
     - target: {fileID: 6392373701042865292, guid: 19fb1126baa90aa4393495149145a989, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6392373701042865293, guid: 19fb1126baa90aa4393495149145a989, type: 3}
       propertyPath: m_RootOrder
@@ -73,8 +73,32 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5440158483812248283, guid: db401ef30b395a64cbe71b2d456584f8, type: 3}
     - target: {fileID: 6392373701042865294, guid: 19fb1126baa90aa4393495149145a989, type: 3}
+      propertyPath: baseColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6392373701042865294, guid: 19fb1126baa90aa4393495149145a989, type: 3}
+      propertyPath: baseColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6392373701042865294, guid: 19fb1126baa90aa4393495149145a989, type: 3}
+      propertyPath: baseColor.r
+      value: 0.9069853
+      objectReference: {fileID: 0}
+    - target: {fileID: 6392373701042865294, guid: 19fb1126baa90aa4393495149145a989, type: 3}
       propertyPath: speedDefault
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6392373701042865294, guid: 19fb1126baa90aa4393495149145a989, type: 3}
+      propertyPath: damageColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6392373701042865294, guid: 19fb1126baa90aa4393495149145a989, type: 3}
+      propertyPath: damageColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6392373701042865294, guid: 19fb1126baa90aa4393495149145a989, type: 3}
+      propertyPath: damageColor.r
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

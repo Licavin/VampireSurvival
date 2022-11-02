@@ -19,8 +19,23 @@ public class EnemyManager : MonoBehaviour
     float spawnTimer;
     float roundTimer;
     private float orthoSize=5;
+
+    private static EnemyManager instance = null;
+    public static EnemyManager Instance => instance;
+
+
     private void Awake()
     {
+        if (instance != null && instance != this)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+        else
+        {
+            instance = this;
+        }
+        DontDestroyOnLoad(this.gameObject);
         camera = Camera.main;
         cameraTransform = camera.gameObject.transform;
         camera.orthographicSize = orthoSize;
@@ -33,6 +48,7 @@ public class EnemyManager : MonoBehaviour
         
         spawnTimer = spawnTimerBase;
         roundTimer = rounds[i].timerRound;
+
     }
 
 
@@ -55,10 +71,7 @@ public class EnemyManager : MonoBehaviour
             }
         }
 
-  /*      if (Time.time-BeginTime > rounds[i].endTimerRound && i!= rounds.Count -1)
-        {
-            i++;
-        }*/
+
 
         if (roundTimer > 0)
         {

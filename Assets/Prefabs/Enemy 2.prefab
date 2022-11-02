@@ -13,8 +13,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5440158483812248283, guid: db401ef30b395a64cbe71b2d456584f8, type: 3}
     - target: {fileID: 3532367232766482233, guid: 1ee5200bec03dbf4b8a1dddbf0cb0170, type: 3}
+      propertyPath: baseColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3532367232766482233, guid: 1ee5200bec03dbf4b8a1dddbf0cb0170, type: 3}
+      propertyPath: baseColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3532367232766482233, guid: 1ee5200bec03dbf4b8a1dddbf0cb0170, type: 3}
+      propertyPath: baseColor.g
+      value: 0.86713624
+      objectReference: {fileID: 0}
+    - target: {fileID: 3532367232766482233, guid: 1ee5200bec03dbf4b8a1dddbf0cb0170, type: 3}
+      propertyPath: baseColor.r
+      value: 0.0141509175
+      objectReference: {fileID: 0}
+    - target: {fileID: 3532367232766482233, guid: 1ee5200bec03dbf4b8a1dddbf0cb0170, type: 3}
       propertyPath: speedDefault
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3532367232766482233, guid: 1ee5200bec03dbf4b8a1dddbf0cb0170, type: 3}
+      propertyPath: damageColor.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3532367232766482234, guid: 1ee5200bec03dbf4b8a1dddbf0cb0170, type: 3}
       propertyPath: m_RootOrder
@@ -62,15 +82,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3532367232766482235, guid: 1ee5200bec03dbf4b8a1dddbf0cb0170, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 0.89932394
       objectReference: {fileID: 0}
     - target: {fileID: 3532367232766482235, guid: 1ee5200bec03dbf4b8a1dddbf0cb0170, type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3532367232766482235, guid: 1ee5200bec03dbf4b8a1dddbf0cb0170, type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3532367232766482238, guid: 1ee5200bec03dbf4b8a1dddbf0cb0170, type: 3}
       propertyPath: m_Name

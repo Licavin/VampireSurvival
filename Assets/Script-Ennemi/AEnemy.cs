@@ -28,6 +28,12 @@ public abstract class AEnemy : MonoBehaviour
 
     [SerializeField]
     protected UnityEvent onDeath, onDamage, onCollision;
+
+    [SerializeField]
+    protected Color damageColor, baseColor;
+
+    [SerializeField]
+    protected float colorSpeed;
     private void Awake()
     {
         col =GetComponent<BoxCollider2D>();
@@ -35,7 +41,7 @@ public abstract class AEnemy : MonoBehaviour
         hpCurrent = hpMax;
         speedCurrent = speedDefault;
         damageCurrent = damageDefault; 
-
+        spriteRenderer.material.color = baseColor;
     }
 
     public virtual void SetTarget(GameObject target)
@@ -46,14 +52,49 @@ public abstract class AEnemy : MonoBehaviour
     {
 
     }
+    public void Damage(float damage)
+    {
+        
+        hpCurrent -= damage;
+        StartCoroutine(DamageVisual());
+        if (hpCurrent<=0)
+        {
+            OnDeath();
+        }
+    }
 
     public virtual void OnDeath()
     {
+        StopCoroutine(DamageVisual());
         onDeath.Invoke();
+        Destroy(gameObject);
+        
     }
 
     public virtual void OnDamage()
     {
         onDamage.Invoke();
+    }
+
+    IEnumerator DamageVisual()
+    {
+        float t = 0;
+        Color color;
+        while (t<1)
+        {
+            Debug.Log(t);
+            t += Time.deltaTime*colorSpeed;
+            color = Color.Lerp(baseColor, damageColor, t);
+            spriteRenderer.material.color = color;
+            yield return new WaitForSeconds(0.05f);
+        }
+        while (t > 0)
+        {
+            t -= Time.deltaTime * colorSpeed;
+            color = Color.Lerp(baseColor, damageColor, t);
+            spriteRenderer.material.color = color;
+            yield return new WaitForSeconds(0.05f);
+        }
+        
     }
 }
