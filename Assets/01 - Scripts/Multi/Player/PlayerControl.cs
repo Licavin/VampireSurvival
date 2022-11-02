@@ -22,6 +22,9 @@ public class PlayerControl : NetworkBehaviour
     private float oldForwardPosition;
     private float oldleftRightPosition;
 
+    public Animator animator;
+
+
     private void Start()
     {
         transform.position = new Vector2(Random.Range(defaultPositionRange.x, defaultPositionRange.y),
@@ -30,6 +33,14 @@ public class PlayerControl : NetworkBehaviour
         if (FindObjectOfType<Camera>().GetComponent<CameraFollow>().player == null)//for add camera follow
         {
             FindObjectOfType<Camera>().GetComponent<CameraFollow>().player = this.gameObject;
+        }
+        else// Add new camera for player two 
+        {
+            Instantiate(GameManager.Instance.prefabsCameraFollow, new Vector3(0, 0, 0), Quaternion.identity);
+            if (FindObjectOfType<Camera>().GetComponent<CameraFollow>().player == null)//for add camera follow
+            {
+                FindObjectOfType<Camera>().GetComponent<CameraFollow>().player = this.gameObject;
+            }
         }
         
     }
@@ -45,6 +56,7 @@ public class PlayerControl : NetworkBehaviour
         {
             UpdateClient();
         }
+
     }
 
     private void UpdateServeur()
@@ -68,10 +80,12 @@ public class PlayerControl : NetworkBehaviour
         if (Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.LeftArrow))
         {
             leftRight -= walkSpeed;
+            //add anim left
         }
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             leftRight += walkSpeed;
+            //add anim right
         }
 
         if (oldForwardPosition != forwardBackward || oldleftRightPosition != leftRight)
@@ -90,5 +104,6 @@ public class PlayerControl : NetworkBehaviour
         forwardBackPosition.Value = forwardBackward;
         leftRightPosition.Value = leftRight;
     }
+
     
 }
