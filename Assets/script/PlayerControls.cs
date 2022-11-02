@@ -7,6 +7,9 @@ public class PlayerControls : MonoBehaviour
 
     public Vector2 speed = new Vector2(20, 20);
 
+    public Rigidbody2D rb;
+    public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +27,10 @@ public class PlayerControls : MonoBehaviour
         movement *=Time.deltaTime;
 
         transform.Translate(movement);
+
+        float charactereVelocity = Mathf.Abs(rb.velocity.x);
+        animator.SetFloat("Speed", rb.velocity.x);
+
 
     }
 }
