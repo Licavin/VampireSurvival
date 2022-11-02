@@ -19,7 +19,7 @@ public class UiManager : MonoBehaviour
     private TextMeshProUGUI PlayersInGameText;
 
     [SerializeField]
-    private TextMeshProUGUI inputFieldAddres;
+    private Text inputFieldAddres;
 
     public UnityTransport untp;  //find UnityTransport data address
     public GetIpV4 gip;  //find me ipv4
