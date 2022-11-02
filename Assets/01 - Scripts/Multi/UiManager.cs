@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Unity.Netcode;
+using Unity.Netcode.Transports.UTP;
 
 public class UiManager : MonoBehaviour
 {
@@ -17,6 +18,12 @@ public class UiManager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI PlayersInGameText;
 
+    [SerializeField]
+    private TextMeshProUGUI inputFieldAddres;
+
+    public UnityTransport untp;  //find UnityTransport data address
+    public GetIpV4 gip;  //find me ipv4
+
     private void Awake()
     {
         Cursor.visible = true;
@@ -24,21 +31,25 @@ public class UiManager : MonoBehaviour
 
     private void Update()
     {
-        //PlayersInGameText.text = $"Players in game: {PlayersManager.instance.PlayersInGame}";
+        //PlayersInGameText.text = $"Players in game: {PlayersManager.Instance.PlayersInGame}";
     }
 
 
     private void Start()
     {
+
+
         startHostButton.onClick.AddListener(() =>
         {
+            untp.ConnectionData.Address = gip.GetLocalIPAddress();//get me ip for host game 
+            Debug.Log(untp.ConnectionData.Address);
             if (NetworkManager.Singleton.StartHost())
             {
-                //Debug.Log(Instance.LogInfo("Host started..."));
+                Debug.Log("Host started...");
             }
             else
             {
-
+                Debug.Log("Host STOPted...");
             }
         });
         startServeurButton.onClick.AddListener(() =>
@@ -52,16 +63,25 @@ public class UiManager : MonoBehaviour
 
             }
         });
+
         startClientButton.onClick.AddListener(() =>
         {
+           
             if (NetworkManager.Singleton.StartClient())
             {
-
+                Debug.Log("client started...");
             }
             else
             {
-
+                Debug.Log("client stopted...");
             }
         });
+    }
+
+    public void inputAddres()
+    {
+        untp.ConnectionData.Address = inputFieldAddres.text;
+        Debug.Log(inputFieldAddres.text);
+        Debug.Log(untp.ConnectionData.Address);
     }
 }
