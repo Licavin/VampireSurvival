@@ -345,7 +345,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -389,7 +389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1298915076}
-  timeOffset: 0.2
+  timeOffset: 0.1
   posOffset: {x: 0, y: 0, z: -10}
 --- !u!1 &1298915076
 GameObject:
@@ -403,7 +403,6 @@ GameObject:
   - component: {fileID: 1298915079}
   - component: {fileID: 1298915078}
   - component: {fileID: 1298915077}
-  - component: {fileID: 1298915081}
   - component: {fileID: 1298915082}
   - component: {fileID: 1298915083}
   m_Layer: 0
@@ -527,21 +526,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1298915081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1298915076}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fb4d9bd370f26141a5bc5444d553f7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: {x: 20, y: 20}
-  rb: {fileID: 1298915078}
-  animator: {fileID: 1298915082}
 --- !u!95 &1298915082
 Animator:
   serializedVersion: 4
@@ -574,10 +558,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e0e2e4565182f746900aac2281f9e0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 6000
+  moveSpeed: 10000
   rb: {fileID: 1298915078}
   animator: {fileID: 1298915082}
   spriteRenderer: {fileID: 1298915079}
+  speed: {x: 20, y: 20}
 --- !u!1 &1633326382
 GameObject:
   m_ObjectHideFlags: 0

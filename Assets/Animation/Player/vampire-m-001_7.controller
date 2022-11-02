@@ -114,7 +114,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PlayerRunRight
+  m_Name: PlayerRun
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -174,16 +174,16 @@ AnimatorStateMachine:
     m_Position: {x: 290, y: 120, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 436635627261925517}
-    m_Position: {x: 325, y: 185, z: 0}
+    m_Position: {x: 640, y: 120, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 543556623649719446}
-    m_Position: {x: 360, y: 250, z: 0}
+    m_Position: {x: 20, y: 290, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4861044016916155468}
-    m_Position: {x: 395, y: 315, z: 0}
+    m_Position: {x: 20, y: 350, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4417240040380135481}
-    m_Position: {x: 430, y: 380, z: 0}
+    m_Position: {x: 20, y: 410, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
