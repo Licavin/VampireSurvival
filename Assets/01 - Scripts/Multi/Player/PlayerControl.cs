@@ -26,6 +26,12 @@ public class PlayerControl : NetworkBehaviour
     {
         transform.position = new Vector2(Random.Range(defaultPositionRange.x, defaultPositionRange.y),
             Random.Range(defaultPositionRange.x, defaultPositionRange.y));
+
+        if (FindObjectOfType<Camera>().GetComponent<CameraFollow>().player == null)//for add camera follow
+        {
+            FindObjectOfType<Camera>().GetComponent<CameraFollow>().player = this.gameObject;
+        }
+        
     }
 
     private void Update()
