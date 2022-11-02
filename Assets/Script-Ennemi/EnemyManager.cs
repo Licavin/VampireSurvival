@@ -10,19 +10,21 @@ public class EnemyManager : MonoBehaviour
     
     
     private int currentEnemy;
-    private float BeginTime;
     private float lastTimeSpawn;
 
     private int i = 0;
     public List<RoundEnemies> rounds;
 
-    private float orthoSize=15;
+    float spawnTimerBase = 2;
+    float spawnTimer;
+    float roundTimer;
+    private float orthoSize=5;
     private void Awake()
     {
         camera = Camera.main;
         cameraTransform = camera.gameObject.transform;
         camera.orthographicSize = orthoSize;
-        BeginTime = Time.time;
+        
         lastTimeSpawn = Time.time;
     }
     // Start is called before the first frame update
@@ -30,10 +32,10 @@ public class EnemyManager : MonoBehaviour
     {
         
         spawnTimer = spawnTimerBase;
+        roundTimer = rounds[i].timerRound;
     }
 
-    float spawnTimerBase = 2;
-    float spawnTimer;
+
     
     // Update is called once per frame
     void Update()
@@ -41,27 +43,46 @@ public class EnemyManager : MonoBehaviour
         if(spawnTimer > 0)
         {
             spawnTimer -= Time.deltaTime;
-            if(spawnTimer < 0)
+            if(spawnTimer < 0 )
             {
-                spawnTimer += spawnTimerBase;
-                Spawn();
+                spawnTimer = rounds[i].spawnCD;
+                if (currentEnemy < rounds[i].maxEnemy)
+                {
+                    Spawn();
+                    currentEnemy++;
+                }
+
             }
         }
 
-        if (Time.time-BeginTime > rounds[i].endTimerRound && i!= rounds.Count -1)
+  /*      if (Time.time-BeginTime > rounds[i].endTimerRound && i!= rounds.Count -1)
         {
             i++;
+        }*/
+
+        if (roundTimer > 0)
+        {
+            roundTimer -= Time.deltaTime;
+            if (roundTimer < 0)
+            {
+                i++;
+                if (i<= rounds.Count)
+                {
+                    roundTimer = rounds[i].timerRound;
+                   
+                }
+                
+            }
         }
- 
     }
 
     private void Spawn()
     {
        GameObject nextEnemy = rounds[i].enemies[ Random.Range(0, rounds[i].enemies.Count )];
-       float dirX = Random.Range(-1,1);
-       float dirY = Random.Range(-1, 1);
+       float dirX = Random.Range(-1f,1f);
+       float dirY = Random.Range(-1f, 1f);
        float radius = Random.Range (2.1f * orthoSize , 3.5f* orthoSize);
-       Vector3 pos = new Vector3(dirX, dirY, 0).normalized*radius+cameraTransform.position;
+       Vector3 pos = new Vector3(dirX, dirY, 0).normalized*radius+cameraTransform.position + new Vector3(0,0,10);
 
 
        lastTimeSpawn = Time.time;
@@ -75,6 +96,6 @@ public class RoundEnemies
 {
     public List<GameObject> enemies;
     public float spawnCD;
-    public float endTimerRound;
+    public float timerRound;
     public int maxEnemy;
 }

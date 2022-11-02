@@ -703,7 +703,7 @@ MonoBehaviour:
     - {fileID: 6392373701042865289, guid: 19fb1126baa90aa4393495149145a989, type: 3}
     - {fileID: 4082259040444210216, guid: 5e8ea199726b32c469de29b18c5ea190, type: 3}
     spawnCD: 1
-    endTimerRound: 999
+    endTimerRound: 99999
     maxEnemy: 50
 --- !u!4 &1372517248
 Transform:

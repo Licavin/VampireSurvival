@@ -10,12 +10,13 @@ public class Squeleton : AEnemy
         Vector3 dir = target.transform.position-transform.position;
         
         Vector2 direction = new Vector2(dir.x, dir.y).normalized;
-        transform.position += dir*Time.deltaTime*speedCurrent;
+        transform.position += new Vector3(direction.x,direction.y,0)*Time.deltaTime*speedCurrent;
     }
 
     private void Update()
     {
         Move();
+        spriteRenderer.flipX = target.transform.position.x < transform.position.x;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -23,7 +24,7 @@ public class Squeleton : AEnemy
 
         if (collision.gameObject.CompareTag("Player"))
         {
-            //collision.gameObject.SetActive(false);
+            collision.gameObject.SetActive(false);
         }
 
    
