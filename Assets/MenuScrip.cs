@@ -11,6 +11,12 @@ public class MenuScrip : MonoBehaviour
     public GameObject MenuCanvas;
     public GameObject ErrorCanvas;
 
+
+    public GameObject P1A1Selet;
+    public GameObject P1A2Selet;
+    public GameObject P2A1Selet;
+    public GameObject P2A2Selet;
+
     bool host;
     bool join;
     bool wrongIP;
