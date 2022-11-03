@@ -341,6 +341,7 @@ GameObject:
   - component: {fileID: 861736191}
   - component: {fileID: 861736190}
   - component: {fileID: 861736189}
+  - component: {fileID: 861736192}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -441,6 +442,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &861736192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861736187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9124c554b62a7644f96711206bec7f35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 0
 --- !u!1 &931453837
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,13 +806,13 @@ MonoBehaviour:
   - enemies:
     - {fileID: 3532367232766482238, guid: 1ee5200bec03dbf4b8a1dddbf0cb0170, type: 3}
     spawnCD: 1
-    timerRound: 0
+    timerRound: 10
     maxEnemy: 10
   - enemies:
     - {fileID: 6392373701042865289, guid: 19fb1126baa90aa4393495149145a989, type: 3}
     - {fileID: 4082259040444210216, guid: 5e8ea199726b32c469de29b18c5ea190, type: 3}
     spawnCD: 1
-    timerRound: 0
+    timerRound: 50
     maxEnemy: 50
 --- !u!4 &1372517248
 Transform:
