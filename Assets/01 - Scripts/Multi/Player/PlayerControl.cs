@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Unity.Netcode;
 using UnityEngine;
 
@@ -6,13 +7,7 @@ using Random = UnityEngine.Random;
 
 public class PlayerControl : NetworkBehaviour
 {
-    public enum PlayerState
-    {
-        right,
-        left,
-        top,
-        bottom
-    }
+
 
     [SerializeField]
     private float walkSpeed = 1f;
@@ -26,8 +21,7 @@ public class PlayerControl : NetworkBehaviour
     [SerializeField]
     private NetworkVariable<float> leftRightPosition = new NetworkVariable<float>();
 
-    [SerializeField]
-    private NetworkVariable<PlayerState> networkPlayerState = new NetworkVariable<PlayerState>();
+
 
     // client caching
     private float oldForwardPosition;
@@ -41,6 +35,7 @@ public class PlayerControl : NetworkBehaviour
     {
         transform.position = new Vector2(Random.Range(defaultPositionRange.x, defaultPositionRange.y),
             Random.Range(defaultPositionRange.x, defaultPositionRange.y));
+
 
         if (FindObjectOfType<Camera>().GetComponent<CameraFollow>().player == null)//for add camera follow
         {
@@ -122,5 +117,5 @@ public class PlayerControl : NetworkBehaviour
         leftRightPosition.Value = leftRight;
     }
 
-    
+   
 }
