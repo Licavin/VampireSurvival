@@ -68,10 +68,10 @@ public class ProjectileMove : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.tag);
+        //Debug.Log(collision.tag);
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("collision enemy");
+            //Debug.Log("collision enemy");
             collision.gameObject.GetComponent<AEnemy>().Damage(damage);
             Destroy(this.gameObject);
         }

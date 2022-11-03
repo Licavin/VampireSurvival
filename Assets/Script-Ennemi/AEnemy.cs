@@ -82,7 +82,7 @@ public abstract class AEnemy : MonoBehaviour
         Color color;
         while (t<1)
         {
-            Debug.Log(t);
+            //Debug.Log(t);
             t += Time.deltaTime*colorSpeed;
             color = Color.Lerp(baseColor, damageColor, t);
             spriteRenderer.material.color = color;
