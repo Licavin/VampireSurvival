@@ -1257,6 +1257,11 @@ MonoBehaviour:
       SourcePrefabToOverride: {fileID: 0}
       SourceHashToOverride: 0
       OverridingTargetPrefab: {fileID: 0}
+    - Override: 0
+      Prefab: {fileID: 88576353090176744, guid: 711552ed76da3b145bd0e17ce8b5c724, type: 3}
+      SourcePrefabToOverride: {fileID: 0}
+      SourceHashToOverride: 0
+      OverridingTargetPrefab: {fileID: 0}
     TickRate: 30
     ClientConnectionBufferTimeout: 10
     ConnectionApproval: 0
@@ -1280,6 +1285,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1449773930880931206, guid: de23d6d5380aa6742bd9b5d2cf0f5d7c, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 3216727219
+      objectReference: {fileID: 0}
     - target: {fileID: 7530860824016579969, guid: de23d6d5380aa6742bd9b5d2cf0f5d7c, type: 3}
       propertyPath: m_Name
       value: PlayerCameraFollow
@@ -1326,6 +1335,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7530860824016579970, guid: de23d6d5380aa6742bd9b5d2cf0f5d7c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7530860824016579971, guid: de23d6d5380aa6742bd9b5d2cf0f5d7c, type: 3}
+      propertyPath: m_TargetDisplay
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7530860824016579981, guid: de23d6d5380aa6742bd9b5d2cf0f5d7c, type: 3}

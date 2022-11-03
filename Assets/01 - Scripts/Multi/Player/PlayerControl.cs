@@ -23,6 +23,7 @@ public class PlayerControl : NetworkBehaviour
     private float oldleftRightPosition;
 
     public Animator animator;
+    public Camera currentCam;
 
 
     private void Start()
@@ -30,18 +31,35 @@ public class PlayerControl : NetworkBehaviour
         transform.position = new Vector2(Random.Range(defaultPositionRange.x, defaultPositionRange.y),
             Random.Range(defaultPositionRange.x, defaultPositionRange.y));
 
-        if (/*FindObjectOfType<Camera>().GetComponent<CameraFollow>().player == null*/GameObject.Find("PlayerCameraFollow").GetComponent<CameraFollow>().player == null)//for add camera follow
+        Camera[] cams = FindObjectsOfType<Camera>();
+
+        foreach (Camera cam in cams)
+        {
+            if (cam.name == currentCam.name)
+            {
+                cam.enabled = true;
+            }
+            else
+            {
+                cam.enabled = false;
+            }
+        }
+
+        
+        /*if (FindObjectOfType<Camera>().GetComponent<CameraFollow>().player == null)//for add camera follow
         {
             FindObjectOfType<Camera>().GetComponent<CameraFollow>().player = this.gameObject;
+            FindObjectOfType<Camera>().transform.parent = this.gameObject.transform;
         }
         else// Add new camera for player two 
         {
-            Instantiate(GameManager.Instance.prefabsCameraFollow, new Vector3(0, 0, 0), Quaternion.identity);
-            if (/*FindObjectOfType<Camera>().GetComponent<CameraFollow>().player == null*/GameObject.Find("PlayerCameraFollow(clone)").GetComponent<CameraFollow>().player == null)//for add camera follow
+            GameObject cam;
+            cam = Instantiate(GameManager.Instance.prefabsCameraFollow, new Vector3(0, 0, 0), Quaternion.identity);    
+            if (cam.GetComponent<CameraFollow>().player == null)//for add camera follow
             {
-                FindObjectOfType<Camera>().GetComponent<CameraFollow>().player = this.gameObject;
+                cam.GetComponent<CameraFollow>().player = this.gameObject;     
             }
-        }
+        }*/
         
     }
 
