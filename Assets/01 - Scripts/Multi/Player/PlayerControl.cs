@@ -30,14 +30,14 @@ public class PlayerControl : NetworkBehaviour
         transform.position = new Vector2(Random.Range(defaultPositionRange.x, defaultPositionRange.y),
             Random.Range(defaultPositionRange.x, defaultPositionRange.y));
 
-        if (FindObjectOfType<Camera>().GetComponent<CameraFollow>().player == null)//for add camera follow
+        if (/*FindObjectOfType<Camera>().GetComponent<CameraFollow>().player == null*/GameObject.Find("PlayerCameraFollow").GetComponent<CameraFollow>().player == null)//for add camera follow
         {
             FindObjectOfType<Camera>().GetComponent<CameraFollow>().player = this.gameObject;
         }
         else// Add new camera for player two 
         {
             Instantiate(GameManager.Instance.prefabsCameraFollow, new Vector3(0, 0, 0), Quaternion.identity);
-            if (FindObjectOfType<Camera>().GetComponent<CameraFollow>().player == null)//for add camera follow
+            if (/*FindObjectOfType<Camera>().GetComponent<CameraFollow>().player == null*/GameObject.Find("PlayerCameraFollow(clone)").GetComponent<CameraFollow>().player == null)//for add camera follow
             {
                 FindObjectOfType<Camera>().GetComponent<CameraFollow>().player = this.gameObject;
             }
