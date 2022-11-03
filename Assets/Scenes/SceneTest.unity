@@ -213,7 +213,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   damageColor: {r: 0, g: 0, b: 0, a: 0}
-  baseColor: {r: 0, g: 0, b: 0, a: 0}
+  baseColor: {r: 1, g: 1, b: 1, a: 1}
   colorSpeed: 0
 --- !u!1 &429644464 stripped
 GameObject:
@@ -246,7 +246,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   damageColor: {r: 0, g: 0, b: 0, a: 0}
-  baseColor: {r: 0, g: 0, b: 0, a: 0}
+  baseColor: {r: 1, g: 1, b: 1, a: 1}
   colorSpeed: 0
 --- !u!1001 &925793442
 PrefabInstance:
@@ -324,8 +324,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 313653f13f37e23488242dcae7db0ff1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelWeapon:
+    levelcurrent: 0
+    levelMax: 0
+    unityEvents: []
+  damageDefault: 0
+  speedDefault: 0
+  lifetimeDefault: 0
+  numberProjectileDefault: 0
+  reloadTimeDefault: 0
+  sizeDefault: 0
   projectile: {fileID: 5780057414496152272, guid: 92a331b05fd3a2743a2ff8a71c43e1aa, type: 3}
   spawnPoint: {fileID: 1548661892}
+  TimeBetweenShots: 0.5
 --- !u!1 &1548661892 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 773239322584962756, guid: 9fe9c17ae240c8a49a6de5534059ac58, type: 3}

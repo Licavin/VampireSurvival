@@ -19,14 +19,6 @@ public class ProjectileMove : MonoBehaviour
         //myTransform = GetComponent<Transform>();
 
         
-        
-        
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         var enemies = FindObjectsOfType<AEnemy>();
         float minDist = float.MaxValue;
         GameObject closestEnemy = this.gameObject;
@@ -39,7 +31,16 @@ public class ProjectileMove : MonoBehaviour
             }
         }
 
+        target = closestEnemy;
         target.transform.position = closestEnemy.transform.position;
+        
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
         transform.position = Vector2.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
         transform.up = target.transform.position - transform.position;
 
