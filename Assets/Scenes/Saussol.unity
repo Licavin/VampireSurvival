@@ -1118,7 +1118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startServeurButton: {fileID: 909145740}
-  startHostButton: {fileID: 2132546271}
+  startHostButton: {fileID: 845513703}
   startClientButton: {fileID: 1769468934}
   PlayersInGameText: {fileID: 1875652842}
   inputFieldAddres: {fileID: 590791469}
@@ -3331,17 +3331,6 @@ MonoBehaviour:
   ipCanvas: {fileID: 190627939}
   MenuCanvas: {fileID: 1457085153}
   ErrorCanvas: {fileID: 424631047}
---- !u!114 &2132546271 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8698973995023217443, guid: 25b5467b13581f8448fc2d3fbefe6d51, type: 3}
-  m_PrefabInstance: {fileID: 1467405296}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &4060623155507044136
 PrefabInstance:
   m_ObjectHideFlags: 0

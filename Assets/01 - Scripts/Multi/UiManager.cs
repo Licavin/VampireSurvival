@@ -45,7 +45,7 @@ public class UiManager : MonoBehaviour
             Debug.Log(untp.ConnectionData.Address);
             if (NetworkManager.Singleton.StartHost())
             {
-                Debug.Log("Host started...");
+                Debug.Log("Host started..."); //StartHost
             }
             else
             {
@@ -70,7 +70,7 @@ public class UiManager : MonoBehaviour
             if (NetworkManager.Singleton.StartClient())
             {
                 //GameManager.Instance.PlayerJoin();
-                Debug.Log("client started...");
+                Debug.Log("client started...");//Start join
             }
             else
             {
