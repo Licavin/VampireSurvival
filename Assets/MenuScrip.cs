@@ -47,4 +47,15 @@ public class MenuScrip : MonoBehaviour
         ipCanvas.SetActive(false);
         Debug.Log("continue");
     }
+
+    public void HostJoin()
+    {
+        MenuCanvas.SetActive(false);
+        ipCanvas.SetActive(true);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }
