@@ -258,7 +258,7 @@ MonoBehaviour:
   numberProjectileDefault: 2
   reloadTimeDefault: 2
   sizeDefault: 1
-  projectile: {fileID: 3847264858922841674, guid: 794668049e5c080499481e8fbd32a036, type: 3}
+  projectile: {fileID: 5681143014147992717, guid: beff196b9994c0f4291d941e65604fa8, type: 3}
   currentProjectiles: []
   range: 2
 --- !u!1 &651630308367956683
