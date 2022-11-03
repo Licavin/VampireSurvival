@@ -51,14 +51,7 @@ public class Weapon1 : AWeapon
                 {
                     proj.SetActive(true);
                     
-                }
-                
-                    
-                
-                    
-                    
-
-                
+                }          
 
             }
         }
