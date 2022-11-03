@@ -30,6 +30,7 @@ public class MenuScrip : MonoBehaviour
     public void JoinIP()
     {
         join = true;
+        ipCanvas.SetActive(true);
         hostIPPanel.SetActive(false);
         joinIPPanel.SetActive(true);
     }
@@ -37,21 +38,24 @@ public class MenuScrip : MonoBehaviour
     public void HostIP()
     {
         host = true;
+        ipCanvas.SetActive(true);
         hostIPPanel.SetActive(true);
         joinIPPanel.SetActive(false);
     }
 
-    public void IPnextStep()
+    public void LaunchGame()
     {
-        characterCanvas.SetActive(true);
+        characterCanvas.SetActive(false);
         ipCanvas.SetActive(false);
+        joinIPPanel.SetActive(false);
+        MenuCanvas.SetActive(false);
         Debug.Log("continue");
     }
 
-    public void HostJoin()
+    public void Return()
     {
-        MenuCanvas.SetActive(false);
-        ipCanvas.SetActive(true);
+        //MenuCanvas.SetActive(true);
+        ipCanvas.SetActive(false);
     }
 
     public void Quit()
