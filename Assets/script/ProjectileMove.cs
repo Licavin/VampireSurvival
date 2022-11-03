@@ -1,14 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.Animations;
 using static UnityEngine.GraphicsBuffer;
 
 public class ProjectileMove : MonoBehaviour
 {
 
-    [SerializeField] private GameObject target;
-    public float speed = 1.5f;
-
+    private GameObject target;
+    private float lifeTime;
+    private float damage;
+    private float size;
+    private float speed;
+    private Vector3 dir;
+    Collider2D coll;
     Transform myTransform;
    
 
@@ -18,7 +24,7 @@ public class ProjectileMove : MonoBehaviour
 
         //myTransform = GetComponent<Transform>();
 
-        
+        coll = GetComponent<Collider2D>();
         var enemies = FindObjectsOfType<AEnemy>();
         float minDist = float.MaxValue;
         GameObject closestEnemy = this.gameObject;
@@ -32,8 +38,8 @@ public class ProjectileMove : MonoBehaviour
         }
 
         target = closestEnemy;
-        target.transform.position = closestEnemy.transform.position;
         
+        dir = (target.transform.position - transform.position).normalized;
 
     }
 
@@ -41,11 +47,34 @@ public class ProjectileMove : MonoBehaviour
     void Update()
     {
         
-        transform.position = Vector2.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
-        transform.up = target.transform.position - transform.position;
+        transform.position += dir* speed*Time.deltaTime;
+        transform.up = dir;
 
 
 
-        Destroy(this.gameObject, 3f);
+        Destroy(this.gameObject, lifeTime);
     }
+
+    public void Init(float lifeT, float dmg, float siz, float spd)
+    {
+        lifeTime = lifeT;
+        damage = dmg;
+        size = siz;
+        speed = spd;
+
+        transform.localScale = Vector3.one * size;
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log(collision.tag);
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Debug.Log("collision enemy");
+            collision.gameObject.GetComponent<AEnemy>().Damage(damage);
+            Destroy(this.gameObject);
+        }
+    }
+   
 }

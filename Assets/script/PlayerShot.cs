@@ -7,8 +7,14 @@ public class PlayerShot : AWeapon
 
     private float delay;
     public float TimeBetweenShots = 0.5f;  // seconds
-
+    float reloadTimer;
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+        Init();
+        reloadTimer = reloadTimeCurrent;
+    }
     void Start()
     {
 
@@ -17,22 +23,26 @@ public class PlayerShot : AWeapon
     // Update is called once per frame
     void Update()
     {
-        
-        if (delay > 0)
-        {
-            delay -= Time.deltaTime;
-        }
-
-        // can we shoot yet?
-        if (delay <= 0)
-        {
-            
-            delay = TimeBetweenShots;
-
-            Instantiate(projectile, spawnPoint.transform.position, Quaternion.identity);
-        }
+        Shoot();
 
     }
+    private void Shoot()
+    {
+        GameObject proj;
+        if (reloadTimer > 0)
+        {
+            reloadTimer -= Time.deltaTime;
+            if (reloadTimer < 0)
+            {
+                reloadTimer = reloadTimeCurrent;
+                //levelWeapon.LevelUp();
+                proj = Instantiate(projectile, spawnPoint.transform.position, Quaternion.identity);
+                proj.GetComponent<ProjectileMove>().Init(lifetimeCurrent, damageCurrent, sizeCurrent, speedCurrent);
+            }
+        }
 
+
+
+    }
 
 }
