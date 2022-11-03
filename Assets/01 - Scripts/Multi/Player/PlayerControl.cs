@@ -1,13 +1,16 @@
 using System;
+using System.Collections.Generic;
 using Unity.Netcode;
 using UnityEngine;
-using Unity.Mathematics;
+
 using Random = UnityEngine.Random;
 
 public class PlayerControl : NetworkBehaviour
 {
+
+
     [SerializeField]
-    private float walkSpeed = 3.5f;
+    private float walkSpeed = 1f;
 
     [SerializeField]
     private Vector2 defaultPositionRange = new Vector2(-4, 4);
@@ -18,14 +21,35 @@ public class PlayerControl : NetworkBehaviour
     [SerializeField]
     private NetworkVariable<float> leftRightPosition = new NetworkVariable<float>();
 
+
+
     // client caching
     private float oldForwardPosition;
     private float oldleftRightPosition;
+
+    public Animator animator;
+    public Rigidbody2D rb;
+
 
     private void Start()
     {
         transform.position = new Vector2(Random.Range(defaultPositionRange.x, defaultPositionRange.y),
             Random.Range(defaultPositionRange.x, defaultPositionRange.y));
+
+
+        if (FindObjectOfType<Camera>().GetComponent<CameraFollow>().player == null)//for add camera follow
+        {
+            FindObjectOfType<Camera>().GetComponent<CameraFollow>().player = this.gameObject;
+        }
+        else// Add new camera for player two 
+        {
+            Instantiate(GameManager.Instance.prefabsCameraFollow, new Vector3(0, 0, 0), Quaternion.identity);
+            if (FindObjectOfType<Camera>().GetComponent<CameraFollow>().player == null)//for add camera follow
+            {
+                FindObjectOfType<Camera>().GetComponent<CameraFollow>().player = this.gameObject;
+            }
+        }
+        
     }
 
     private void Update()
@@ -39,6 +63,8 @@ public class PlayerControl : NetworkBehaviour
         {
             UpdateClient();
         }
+
+       
     }
 
     private void UpdateServeur()
@@ -54,18 +80,24 @@ public class PlayerControl : NetworkBehaviour
         if (Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.UpArrow))
         {
             forwardBackward += walkSpeed;
+            animator.Play("PlayerUp");
         }
         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
             forwardBackward -= walkSpeed;
+            animator.Play("PlayerDown");
         }
         if (Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.LeftArrow))
         {
             leftRight -= walkSpeed;
+            //add anim left
+            animator.Play("PlayerRunLeft");
         }
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             leftRight += walkSpeed;
+            //add anim right
+            animator.Play("AnimRightV1");
         }
 
         if (oldForwardPosition != forwardBackward || oldleftRightPosition != leftRight)
@@ -84,5 +116,6 @@ public class PlayerControl : NetworkBehaviour
         forwardBackPosition.Value = forwardBackward;
         leftRightPosition.Value = leftRight;
     }
-    
+
+   
 }
