@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 1349425088668632227}
   - component: {fileID: 4162702196439356558}
   - component: {fileID: -708252040024896912}
+  - component: {fileID: -6355238681222188605}
   m_Layer: 0
   m_Name: Player2D
   m_TagString: Player
@@ -261,6 +262,21 @@ MonoBehaviour:
   projectile: {fileID: 3847264858922841674, guid: 794668049e5c080499481e8fbd32a036, type: 3}
   currentProjectiles: []
   range: 2
+--- !u!114 &-6355238681222188605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88576353090176744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8da1695725d1d8044a794895b5481e98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthMax: 20
+  speedDefault: 0
+  currentExp: 0
 --- !u!1 &1120981117369415687
 GameObject:
   m_ObjectHideFlags: 0

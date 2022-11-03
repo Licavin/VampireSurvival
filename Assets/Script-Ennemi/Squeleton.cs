@@ -25,7 +25,7 @@ public class Squeleton : AEnemy
 
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.SetActive(false);
+            collision.gameObject.GetComponent<PlayerStats>().Damage(damageCurrent);
         }
 
    
