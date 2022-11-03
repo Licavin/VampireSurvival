@@ -957,6 +957,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5685274233625861602, guid: 164abf683e88ac04fb395db41a565946, type: 3}
+      propertyPath: rounds.Array.data[1].spawnCD
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5685274233625861602, guid: 164abf683e88ac04fb395db41a565946, type: 3}
+      propertyPath: rounds.Array.data[0].maxEnemy
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5685274233625861602, guid: 164abf683e88ac04fb395db41a565946, type: 3}
+      propertyPath: rounds.Array.data[1].maxEnemy
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 5685274233625861602, guid: 164abf683e88ac04fb395db41a565946, type: 3}
+      propertyPath: rounds.Array.data[0].timerRound
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 5685274233625861603, guid: 164abf683e88ac04fb395db41a565946, type: 3}
       propertyPath: m_Name
       value: EnemyManager

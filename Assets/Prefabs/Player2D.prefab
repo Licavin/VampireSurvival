@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 4162702196439356558}
   - component: {fileID: -708252040024896912}
   - component: {fileID: -6355238681222188605}
+  - component: {fileID: -5401055502312733243}
   m_Layer: 0
   m_Name: Player2D
   m_TagString: Player
@@ -41,6 +42,7 @@ Transform:
   - {fileID: 5464364435434236041}
   - {fileID: 1517313776108415711}
   - {fileID: 1645274552521060633}
+  - {fileID: 2503098729199239741}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -85,12 +87,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1332298592, guid: e9e2af88094be0447b2f7309787ab938, type: 3}
+  m_Sprite: {fileID: -1960125149, guid: 45e16f8f6cdbfb545aa480052037172a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 3, y: 4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -209,7 +211,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 3, y: 4}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 3, y: 4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -277,6 +279,31 @@ MonoBehaviour:
   healthMax: 20
   speedDefault: 0
   currentExp: 0
+--- !u!114 &-5401055502312733243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88576353090176744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313653f13f37e23488242dcae7db0ff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelWeapon:
+    levelcurrent: 0
+    levelMax: 0
+    unityEvents: []
+  damageDefault: 5
+  speedDefault: 10
+  lifetimeDefault: 3
+  numberProjectileDefault: 1
+  reloadTimeDefault: 0.5
+  sizeDefault: 1
+  projectile: {fileID: 5780057414496152272, guid: 92a331b05fd3a2743a2ff8a71c43e1aa, type: 3}
+  spawnPoint: {fileID: 1228213167376348019}
+  TimeBetweenShots: 0.5
 --- !u!1 &1120981117369415687
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,6 +404,37 @@ MonoBehaviour:
   player: {fileID: 88576353090176744}
   timeOffset: 0.1
   posOffset: {x: 0, y: 0, z: -30}
+--- !u!1 &1228213167376348019
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2503098729199239741}
+  m_Layer: 0
+  m_Name: ShotSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2503098729199239741
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228213167376348019}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.74, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7795137561217219481}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4599878726721649974
 GameObject:
   m_ObjectHideFlags: 0

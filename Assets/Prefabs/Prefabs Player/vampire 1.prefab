@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 773239322294520540}
   - component: {fileID: 773239322294520541}
   - component: {fileID: 1032691726}
-  - component: {fileID: 8753700298796168797}
   m_Layer: 0
   m_Name: vampire 1
   m_TagString: Player
@@ -176,31 +175,6 @@ MonoBehaviour:
   spriteRenderer: {fileID: 773239322294520529}
   speed: {x: 20, y: 20}
 --- !u!114 &1032691726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 773239322294520530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 313653f13f37e23488242dcae7db0ff1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelWeapon:
-    levelcurrent: 0
-    levelMax: 0
-    unityEvents: []
-  damageDefault: 5
-  speedDefault: 10
-  lifetimeDefault: 3
-  numberProjectileDefault: 1
-  reloadTimeDefault: 0.5
-  sizeDefault: 1
-  projectile: {fileID: 5780057414496152272, guid: 92a331b05fd3a2743a2ff8a71c43e1aa, type: 3}
-  spawnPoint: {fileID: 773239322584962756}
-  TimeBetweenShots: 0.5
---- !u!114 &8753700298796168797
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
