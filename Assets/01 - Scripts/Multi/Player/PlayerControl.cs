@@ -1,13 +1,21 @@
 using System;
 using Unity.Netcode;
 using UnityEngine;
-using Unity.Mathematics;
+
 using Random = UnityEngine.Random;
 
 public class PlayerControl : NetworkBehaviour
 {
+    public enum PlayerState
+    {
+        right,
+        left,
+        top,
+        bottom
+    }
+
     [SerializeField]
-    private float walkSpeed = 3.5f;
+    private float walkSpeed = 1f;
 
     [SerializeField]
     private Vector2 defaultPositionRange = new Vector2(-4, 4);
@@ -18,11 +26,15 @@ public class PlayerControl : NetworkBehaviour
     [SerializeField]
     private NetworkVariable<float> leftRightPosition = new NetworkVariable<float>();
 
+    [SerializeField]
+    private NetworkVariable<PlayerState> networkPlayerState = new NetworkVariable<PlayerState>();
+
     // client caching
     private float oldForwardPosition;
     private float oldleftRightPosition;
 
     public Animator animator;
+    public Rigidbody2D rb;
 
 
     private void Start()
@@ -57,6 +69,7 @@ public class PlayerControl : NetworkBehaviour
             UpdateClient();
         }
 
+       
     }
 
     private void UpdateServeur()
@@ -72,20 +85,24 @@ public class PlayerControl : NetworkBehaviour
         if (Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.UpArrow))
         {
             forwardBackward += walkSpeed;
+            animator.Play("PlayerUp");
         }
         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
             forwardBackward -= walkSpeed;
+            animator.Play("PlayerDown");
         }
         if (Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.LeftArrow))
         {
             leftRight -= walkSpeed;
             //add anim left
+            animator.Play("PlayerRunLeft");
         }
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             leftRight += walkSpeed;
             //add anim right
+            animator.Play("AnimRightV1");
         }
 
         if (oldForwardPosition != forwardBackward || oldleftRightPosition != leftRight)
