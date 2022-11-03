@@ -29,4 +29,7 @@ public class GameManager : MonoBehaviour
     }
 
     public GameObject prefabsCameraFollow;
+    
+
+    public int player;
 }

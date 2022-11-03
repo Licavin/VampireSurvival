@@ -3,6 +3,8 @@ using Unity.Netcode;
 using UnityEngine;
 using Unity.Mathematics;
 using Random = UnityEngine.Random;
+using Cinemachine;
+using UnityEngine.Assertions;
 
 public class PlayerControl : NetworkBehaviour
 {
@@ -25,41 +27,16 @@ public class PlayerControl : NetworkBehaviour
     public Animator animator;
     public Camera currentCam;
 
-
     private void Start()
     {
+
         transform.position = new Vector2(Random.Range(defaultPositionRange.x, defaultPositionRange.y),
             Random.Range(defaultPositionRange.x, defaultPositionRange.y));
-
-        Camera[] cams = FindObjectsOfType<Camera>();
-
-        foreach (Camera cam in cams)
+      
+        if (!IsOwner)//delet wrong cam
         {
-            if (cam.name == currentCam.name)
-            {
-                cam.enabled = true;
-            }
-            else
-            {
-                cam.enabled = false;
-            }
+            currentCam.gameObject.SetActive(false);
         }
-
-        
-        /*if (FindObjectOfType<Camera>().GetComponent<CameraFollow>().player == null)//for add camera follow
-        {
-            FindObjectOfType<Camera>().GetComponent<CameraFollow>().player = this.gameObject;
-            FindObjectOfType<Camera>().transform.parent = this.gameObject.transform;
-        }
-        else// Add new camera for player two 
-        {
-            GameObject cam;
-            cam = Instantiate(GameManager.Instance.prefabsCameraFollow, new Vector3(0, 0, 0), Quaternion.identity);    
-            if (cam.GetComponent<CameraFollow>().player == null)//for add camera follow
-            {
-                cam.GetComponent<CameraFollow>().player = this.gameObject;     
-            }
-        }*/
         
     }
 
@@ -71,7 +48,8 @@ public class PlayerControl : NetworkBehaviour
         }
 
         if (IsClient && IsOwner)
-        {
+        {        
+
             UpdateClient();
         }
 
@@ -114,7 +92,7 @@ public class PlayerControl : NetworkBehaviour
             // Update the serveur
             UpdateClientPositionServerRpc(forwardBackward, leftRight);
         }
-    }
+    }   
 
     [ServerRpc]
     public void UpdateClientPositionServerRpc(float forwardBackward, float leftRight)
@@ -123,5 +101,8 @@ public class PlayerControl : NetworkBehaviour
         leftRightPosition.Value = leftRight;
     }
 
-    
+
 }
+
+
+

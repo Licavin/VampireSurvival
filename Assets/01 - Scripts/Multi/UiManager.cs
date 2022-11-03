@@ -69,6 +69,7 @@ public class UiManager : MonoBehaviour
            
             if (NetworkManager.Singleton.StartClient())
             {
+                //GameManager.Instance.PlayerJoin();
                 Debug.Log("client started...");
             }
             else
