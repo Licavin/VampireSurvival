@@ -11,6 +11,7 @@ public class Squeleton : AEnemy
         
         Vector2 direction = new Vector2(dir.x, dir.y).normalized;
         transform.position += new Vector3(direction.x,direction.y,0)*Time.deltaTime*speedCurrent;
+        SetTarget();
     }
 
     private void Update()

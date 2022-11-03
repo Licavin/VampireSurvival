@@ -44,9 +44,22 @@ public abstract class AEnemy : MonoBehaviour
         spriteRenderer.material.color = baseColor;
     }
 
-    public virtual void SetTarget(GameObject target)
+    public virtual void SetTarget()
     {
+        GameObject tempTarget = this.gameObject;
+        float minDist = float.MaxValue;
 
+        PlayerStats[] players = FindObjectsOfType<PlayerStats>();
+        foreach (PlayerStats player in players)
+        {
+            float dist = (transform.position - player.transform.position).magnitude;
+            if (dist<minDist)
+            {
+                minDist = dist;
+                tempTarget = player.gameObject;
+            }
+        }
+        target = tempTarget;
     }
     public virtual void Move()
     {
@@ -82,7 +95,7 @@ public abstract class AEnemy : MonoBehaviour
         Color color;
         while (t<1)
         {
-            Debug.Log(t);
+            
             t += Time.deltaTime*colorSpeed;
             color = Color.Lerp(baseColor, damageColor, t);
             spriteRenderer.material.color = color;
