@@ -23,6 +23,11 @@ public class Weapon1 : AWeapon
 
     private void Start()
     {
+        for (int i = 0; i < numberProjectileCurrent; i++)
+        {
+            GameObject proj = Instantiate(projectile, transform.parent);
+            currentProjectiles.Add(proj);
+        }
         foreach (GameObject proj in currentProjectiles)
         {
             proj.GetComponent<Projectile1>().UpdateDamage(damageCurrent);

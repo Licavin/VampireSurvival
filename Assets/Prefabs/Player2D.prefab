@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 2979217727468828083}
   - component: {fileID: 1349425088668632227}
   - component: {fileID: 4162702196439356558}
+  - component: {fileID: -708252040024896912}
   m_Layer: 0
   m_Name: Player2D
   m_TagString: Untagged
@@ -232,6 +233,31 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-708252040024896912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88576353090176744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc147b155f923c244ae3a6fba4e4057a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelWeapon:
+    levelcurrent: 0
+    levelMax: 0
+    unityEvents: []
+  damageDefault: 5
+  speedDefault: 2
+  lifetimeDefault: 5
+  numberProjectileDefault: 2
+  reloadTimeDefault: 2
+  sizeDefault: 1
+  projectile: {fileID: 3847264858922841674, guid: 794668049e5c080499481e8fbd32a036, type: 3}
+  currentProjectiles: []
+  range: 2
 --- !u!1 &7208730909280226228
 GameObject:
   m_ObjectHideFlags: 0
