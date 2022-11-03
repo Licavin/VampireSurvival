@@ -19,22 +19,7 @@ public class CameraFollow : MonoBehaviour
     {
         if (player != null)
         {
-            if (true)
-            {
-                Camera[] cams = Camera.allCameras;
-                Debug.Log(cams.Length);
-                foreach (Camera cam in cams)
-                {
-                    if (cam.transform.parent.GetInstanceID() == transform.parent.GetInstanceID())
-                    {
-                        Debug.Log(cam.name);
-                        Destroy(cam);
-                    }
-                    
-                }
-                
-                initCam = true;
-            }
+
             transform.position = Vector3.SmoothDamp(transform.position, player.transform.position + posOffset, ref velocity, timeOffset);
         }        
     }

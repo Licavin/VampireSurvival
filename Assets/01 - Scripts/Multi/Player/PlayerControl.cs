@@ -33,9 +33,10 @@ public class PlayerControl : NetworkBehaviour
         transform.position = new Vector2(Random.Range(defaultPositionRange.x, defaultPositionRange.y),
             Random.Range(defaultPositionRange.x, defaultPositionRange.y));
       
-        if (!IsOwner)//delet wrong cam
+        if (!IsOwner)//delet wrong cam and instanciate the good one into the Enemy Manager
         {
             currentCam.gameObject.SetActive(false);
+            EnemyManager.Instance.player = gameObject;   
         }
         
     }
