@@ -69,20 +69,25 @@ public class PlayerControl : NetworkBehaviour
         if (Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.UpArrow))
         {
             forwardBackward += walkSpeed;
+            animator.Play("PlayerUp");
         }
         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
             forwardBackward -= walkSpeed;
+
+            animator.Play("PlayerDown");
         }
         if (Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.LeftArrow))
         {
             leftRight -= walkSpeed;
             //add anim left
+            animator.Play("PlayerRunLeft");
         }
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             leftRight += walkSpeed;
             //add anim right
+            animator.Play("PlayerRun");
         }
 
         if (oldForwardPosition != forwardBackward || oldleftRightPosition != leftRight)
