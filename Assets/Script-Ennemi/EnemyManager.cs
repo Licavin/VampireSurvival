@@ -99,7 +99,7 @@ public class EnemyManager : MonoBehaviour
            float dirX = Random.Range(-1f,1f);
            float dirY = Random.Range(-1f, 1f);
            float radius = Random.Range (2.1f * orthoSize , 3.5f* orthoSize);
-           Vector3 pos = new Vector3(dirX, dirY, 0).normalized*radius+player.transform.position ;
+           Vector3 pos = new Vector3(dirX, dirY, 0).normalized*radius+player.GetComponent<PlayerShot>().spawnPoint.transform.position ;
            Instantiate(nextEnemy, pos, Quaternion.identity);
         
 

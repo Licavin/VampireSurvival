@@ -533,7 +533,8 @@ MonoBehaviour:
   currentExp: 0
   panel: {fileID: 7435819886589402970}
   text: {fileID: 7435819886170041217}
-  scrollbar: {fileID: 7435819886896830429}
+  scrollbarExp: {fileID: 7435819886896830429}
+  scrollbarLife: {fileID: 6084063916530855777}
 --- !u!114 &-5401055502312733243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -967,7 +968,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 478820758672599617}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1720,6 +1721,10 @@ PrefabInstance:
     - target: {fileID: 1961210449182819838, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210449810348087, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_Size
+      value: 0.423
       objectReference: {fileID: 0}
     - target: {fileID: 1961210450034333406, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
       propertyPath: m_IsActive
