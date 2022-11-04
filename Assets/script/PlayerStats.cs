@@ -22,6 +22,8 @@ public class PlayerStats : MonoBehaviour
     private float Timer;
 
     public GameObject panel;
+
+    
     public TMP_Text text;
     public Scrollbar scrollbar;
     private void Awake()
@@ -83,8 +85,11 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
+
+
     public void LevelUp()
     {
+
         panel.SetActive(true);
     }
 }

@@ -254,8 +254,259 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelWeapon:
     levelcurrent: 0
-    levelMax: 0
-    unityEvents: []
+    levelMax: 10
+    unityEvents:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: -708252040024896912}
+          m_TargetAssemblyTypeName: Weapon1, Assembly-CSharp
+          m_MethodName: AddDamage
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: -708252040024896912}
+          m_TargetAssemblyTypeName: Weapon1, Assembly-CSharp
+          m_MethodName: AddLifetime
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: -708252040024896912}
+          m_TargetAssemblyTypeName: Weapon1, Assembly-CSharp
+          m_MethodName: AddProjectile
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: -708252040024896912}
+          m_TargetAssemblyTypeName: Weapon1, Assembly-CSharp
+          m_MethodName: AddLifetime
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: -708252040024896912}
+          m_TargetAssemblyTypeName: Weapon1, Assembly-CSharp
+          m_MethodName: DecreaseReload
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: -708252040024896912}
+          m_TargetAssemblyTypeName: Weapon1, Assembly-CSharp
+          m_MethodName: AddDamage
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: -708252040024896912}
+          m_TargetAssemblyTypeName: Weapon1, Assembly-CSharp
+          m_MethodName: AddSpeed
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: -708252040024896912}
+          m_TargetAssemblyTypeName: Weapon1, Assembly-CSharp
+          m_MethodName: AddSize
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: -708252040024896912}
+          m_TargetAssemblyTypeName: Weapon1, Assembly-CSharp
+          m_MethodName: AddSpeed
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: -708252040024896912}
+          m_TargetAssemblyTypeName: Weapon1, Assembly-CSharp
+          m_MethodName: AddProjectile
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: -708252040024896912}
+          m_TargetAssemblyTypeName: Weapon1, Assembly-CSharp
+          m_MethodName: DecreaseReload
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: -708252040024896912}
+          m_TargetAssemblyTypeName: Weapon1, Assembly-CSharp
+          m_MethodName: AddDamage
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: -708252040024896912}
+          m_TargetAssemblyTypeName: Weapon1, Assembly-CSharp
+          m_MethodName: DecreaseReload
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: -708252040024896912}
+          m_TargetAssemblyTypeName: Weapon1, Assembly-CSharp
+          m_MethodName: AddLifetime
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: -708252040024896912}
+          m_TargetAssemblyTypeName: Weapon1, Assembly-CSharp
+          m_MethodName: AddSpeed
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: -708252040024896912}
+          m_TargetAssemblyTypeName: Weapon1, Assembly-CSharp
+          m_MethodName: AddDamage
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: -708252040024896912}
+          m_TargetAssemblyTypeName: Weapon1, Assembly-CSharp
+          m_MethodName: AddProjectile
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: -708252040024896912}
+          m_TargetAssemblyTypeName: Weapon1, Assembly-CSharp
+          m_MethodName: AddSize
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    maxLevel:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7435819886265782344}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   damageDefault: 5
   speedDefault: 2
   lifetimeDefault: 5
@@ -277,12 +528,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8da1695725d1d8044a794895b5481e98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthMaxDefault: 0
+  healthMaxDefault: 100
   speedDefault: 0
   currentExp: 0
-  panel: {fileID: 0}
-  text: {fileID: 0}
-  scrollbar: {fileID: 0}
+  panel: {fileID: 7435819886589402970}
+  text: {fileID: 7435819886170041217}
+  scrollbar: {fileID: 7435819886896830429}
 --- !u!114 &-5401055502312733243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,12 +548,167 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelWeapon:
     levelcurrent: 0
-    levelMax: 0
-    unityEvents: []
+    levelMax: 10
+    unityEvents:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: -5401055502312733243}
+          m_TargetAssemblyTypeName: PlayerShot, Assembly-CSharp
+          m_MethodName: AddDamage
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: -5401055502312733243}
+          m_TargetAssemblyTypeName: PlayerShot, Assembly-CSharp
+          m_MethodName: AddProjectile
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: -5401055502312733243}
+          m_TargetAssemblyTypeName: PlayerShot, Assembly-CSharp
+          m_MethodName: DecreaseReload
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: -5401055502312733243}
+          m_TargetAssemblyTypeName: PlayerShot, Assembly-CSharp
+          m_MethodName: AddSpeed
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: -5401055502312733243}
+          m_TargetAssemblyTypeName: PlayerShot, Assembly-CSharp
+          m_MethodName: AddProjectile
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: -5401055502312733243}
+          m_TargetAssemblyTypeName: PlayerShot, Assembly-CSharp
+          m_MethodName: AddDamage
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: -5401055502312733243}
+          m_TargetAssemblyTypeName: PlayerShot, Assembly-CSharp
+          m_MethodName: AddProjectile
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: -5401055502312733243}
+          m_TargetAssemblyTypeName: PlayerShot, Assembly-CSharp
+          m_MethodName: AddDamage
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: -5401055502312733243}
+          m_TargetAssemblyTypeName: PlayerShot, Assembly-CSharp
+          m_MethodName: DecreaseReload
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: -5401055502312733243}
+          m_TargetAssemblyTypeName: PlayerShot, Assembly-CSharp
+          m_MethodName: AddProjectile
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    maxLevel:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7435819885905895816}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   damageDefault: 5
-  speedDefault: 10
+  speedDefault: 5
   lifetimeDefault: 3
-  numberProjectileDefault: 3
+  numberProjectileDefault: 1
   reloadTimeDefault: 2
   sizeDefault: 1
   projectile: {fileID: 5780057414496152272, guid: 92a331b05fd3a2743a2ff8a71c43e1aa, type: 3}
@@ -1123,12 +1529,200 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 7795137561217219481}
     m_Modifications:
+    - target: {fileID: 1961210448223317347, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1961210448342193500, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1961210448342193500, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210448821579360, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210448821579360, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210448821579360, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210448821579360, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7435819886589402970}
+    - target: {fileID: 1961210448821579360, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: -5401055502312733243}
+    - target: {fileID: 1961210448821579360, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210448821579360, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210448821579360, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210448821579360, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUP
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210448821579360, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210448821579360, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: AWeapon, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210448821579360, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210448821579360, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210448821579361, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210448821579361, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1118310892, guid: a535099872ee96e4193417acd6542237, type: 3}
+    - target: {fileID: 1961210449033057432, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210449033057432, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210449033057432, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: -6355238681222188605}
+    - target: {fileID: 1961210449033057432, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 7435819886589402970}
+    - target: {fileID: 1961210449033057432, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210449033057432, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Heal
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210449033057432, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210449033057432, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerStats, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210449033057432, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210449033057432, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210449033057432, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210449033057433, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210449033057433, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 699e496ffbbc6e142bb9e1be4f71c065, type: 3}
+    - target: {fileID: 1961210449099218848, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210449099218848, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210449099218848, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210449099218848, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7435819886589402970}
+    - target: {fileID: 1961210449099218848, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: -708252040024896912}
+    - target: {fileID: 1961210449099218848, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210449099218848, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210449099218848, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210449099218848, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LevelUP
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210449099218848, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210449099218848, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: AWeapon, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210449099218848, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210449099218848, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210449099218849, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210449099218849, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 209018470, guid: dde033acabbb4e345b2a56baff39f3c2, type: 3}
+    - target: {fileID: 1961210449099218850, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210449182819838, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961210450034333406, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1961210450046872396, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
@@ -1222,6 +1816,43 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+--- !u!1 &7435819885905895816 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1961210448821579362, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+  m_PrefabInstance: {fileID: 8937050726471798762}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7435819886170041217 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1961210449060750443, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+  m_PrefabInstance: {fileID: 8937050726471798762}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &7435819886265782344 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1961210449099218850, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+  m_PrefabInstance: {fileID: 8937050726471798762}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7435819886589402970 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1961210449480241328, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+  m_PrefabInstance: {fileID: 8937050726471798762}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7435819886896830429 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1961210449810348087, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+  m_PrefabInstance: {fileID: 8937050726471798762}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &7435819887197185191 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1961210450046872397, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}

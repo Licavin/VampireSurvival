@@ -23,7 +23,10 @@ public class UiManager : MonoBehaviour
 
     public UnityTransport untp;  //find UnityTransport data address
     public GetIpV4 gip;  //find me ipv4
+    
     public GameObject inGameMenu;
+    public MenuScrip menuScript;
+    public GameObject ipCanvas;
 
     private void Awake()
     {
@@ -47,7 +50,7 @@ public class UiManager : MonoBehaviour
             if (NetworkManager.Singleton.StartHost())
             {
                 Debug.Log("Host started..."); //StartHost
-                inGameMenu.SetActive(true);
+                //inGameMenu.SetActive(true);
             }
             else
             {
@@ -73,7 +76,10 @@ public class UiManager : MonoBehaviour
             {
                 //GameManager.Instance.PlayerJoin();
                 Debug.Log("client started...");//Start join
-                inGameMenu.SetActive(true);
+                //inGameMenu.SetActive(true);
+                menuScript.MenuCanvas.SetActive(false);
+                menuScript.joinIPPanel.SetActive(false);
+                menuScript.ipCanvas.SetActive(false);
 
             }
             else

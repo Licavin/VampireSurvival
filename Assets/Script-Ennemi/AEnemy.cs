@@ -92,6 +92,8 @@ public abstract class AEnemy : MonoBehaviour
         
     }
 
+
+
     public virtual void OnDamage()
     {
         onDamage.Invoke();
