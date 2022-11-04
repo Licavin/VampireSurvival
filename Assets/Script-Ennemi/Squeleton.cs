@@ -7,10 +7,14 @@ public class Squeleton : AEnemy
     // Start is called before the first frame update
     public override void Move()
     {
-        Vector3 dir = target.transform.position-transform.position;
-        
-        Vector2 direction = new Vector2(dir.x, dir.y).normalized;
-        transform.position += new Vector3(direction.x,direction.y,0)*Time.deltaTime*speedCurrent;
+        if (target)
+        {
+            Vector3 dir = target.transform.position - transform.position;
+
+            Vector2 direction = new Vector2(dir.x, dir.y).normalized;
+            transform.position += new Vector3(direction.x, direction.y, 0) * Time.deltaTime * speedCurrent;
+            
+        }
         SetTarget();
     }
 

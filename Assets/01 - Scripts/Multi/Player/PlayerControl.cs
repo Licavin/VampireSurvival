@@ -27,6 +27,7 @@ public class PlayerControl : NetworkBehaviour
     public Animator animator;
     public Camera currentCam;
     public GameObject canvas;
+    public GameObject canvasDeath;
 
     private void Start()
     {
@@ -60,7 +61,7 @@ public class PlayerControl : NetworkBehaviour
 
     public void PlayerDead()
     {
-        canvas.SetActive(true);
+        canvasDeath.SetActive(true);
     }
 
     private void UpdateServeur()
