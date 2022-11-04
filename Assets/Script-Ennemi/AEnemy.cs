@@ -37,6 +37,10 @@ public abstract class AEnemy : MonoBehaviour
 
     [SerializeField]
     protected GameObject Drop;
+
+    [SerializeField]
+    protected GameObject spawnPointGemme;
+
     private void Awake()
     {
         col =GetComponent<BoxCollider2D>();
@@ -83,7 +87,7 @@ public abstract class AEnemy : MonoBehaviour
     {
         StopCoroutine(DamageVisual());
         onDeath.Invoke();
-        Instantiate(Drop);
+        Instantiate(Drop, spawnPointGemme.transform.position, Quaternion.identity);
         Destroy(gameObject);
         
     }
