@@ -25,7 +25,8 @@ public class PlayerStats : MonoBehaviour
 
     
     public TMP_Text text;
-    public Scrollbar scrollbar;
+    public Scrollbar scrollbarExp;
+    public Scrollbar scrollbarLife;
     private void Awake()
     {
         Timer = 0;
@@ -40,7 +41,8 @@ public class PlayerStats : MonoBehaviour
     private void Update()
     {
         Timer+=Time.deltaTime;
-        scrollbar.value = Mathf.Clamp01( currentExp/nextXP);
+        scrollbarExp.size = Mathf.Clamp01( currentExp/nextXP);
+        scrollbarLife.size = Mathf.Clamp01( healthCurrent/healthMaxDefault);
         text.text = $"SurvivedTime: {Mathf.Floor(Timer)}";
     }
 
