@@ -18,6 +18,8 @@ GameObject:
   - component: {fileID: 1349425088668632227}
   - component: {fileID: 4162702196439356558}
   - component: {fileID: -708252040024896912}
+  - component: {fileID: 6164368249893104283}
+  - component: {fileID: -8082995085495130371}
   m_Layer: 0
   m_Name: Player2D UI
   m_TagString: Untagged
@@ -261,6 +263,46 @@ MonoBehaviour:
   projectile: {fileID: 5681143014147992717, guid: beff196b9994c0f4291d941e65604fa8, type: 3}
   currentProjectiles: []
   range: 2
+--- !u!114 &6164368249893104283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88576353090176744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8da1695725d1d8044a794895b5481e98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthMax: 20
+  speedDefault: 0
+  currentExp: 0
+--- !u!114 &-8082995085495130371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88576353090176744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313653f13f37e23488242dcae7db0ff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelWeapon:
+    levelcurrent: 0
+    levelMax: 0
+    unityEvents: []
+  damageDefault: 5
+  speedDefault: 10
+  lifetimeDefault: 3
+  numberProjectileDefault: 3
+  reloadTimeDefault: 0.5
+  sizeDefault: 1
+  projectile: {fileID: 5780057414496152272, guid: 92a331b05fd3a2743a2ff8a71c43e1aa, type: 3}
+  spawnPoint: {fileID: 1228213167376348019, guid: 6ffd49a203461e745b82199512224436, type: 3}
+  TimeBetweenShots: 0.5
 --- !u!1 &651630308367956683
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,7 +855,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 7384085439723847453}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1

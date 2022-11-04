@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class PlayerStats : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public float healthMax;
+    public float healthMaxDefault;
+    private float healthMaxCurrent;
     private float healthCurrent;
 
     public float speedDefault;
@@ -16,15 +19,28 @@ public class PlayerStats : MonoBehaviour
     private float nextXP;
     private float currentLevel;
 
+    private float Timer;
+
+    public GameObject panel;
+    public TMP_Text text;
+    public Scrollbar scrollbar;
     private void Awake()
     {
-        healthCurrent = healthMax;
+        Timer = 0;
+        healthMaxCurrent = healthMaxDefault;
+        healthCurrent = healthMaxDefault;
         speedCurent = speedDefault;
         currentExp = 0;
         currentLevel = 1;
         NextXp(1);
     }
 
+    private void Update()
+    {
+        Timer+=Time.deltaTime;
+        scrollbar.value = Mathf.Clamp01( currentExp/nextXP);
+        text.text = $"SurvivedTime: {Mathf.Floor(Timer)}";
+    }
 
     public  void Damage(float dmg)
     {
@@ -41,9 +57,14 @@ public class PlayerStats : MonoBehaviour
 
     }
 
+    public void Heal()
+    {
+        healthCurrent = healthMaxDefault;
+    }
+
     public void AddHealth(float value)
     {
-        healthCurrent = Mathf.Clamp(healthCurrent + value, 0, healthMax);
+        healthCurrent = Mathf.Clamp(healthCurrent + value, 0, healthMaxCurrent);
     }
     private void NextXp(float n)
     {
@@ -64,6 +85,6 @@ public class PlayerStats : MonoBehaviour
 
     public void LevelUp()
     {
-
+        panel.SetActive(true);
     }
 }

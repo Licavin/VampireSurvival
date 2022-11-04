@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerShot : AWeapon
@@ -28,7 +29,7 @@ public class PlayerShot : AWeapon
     }
     private void Shoot()
     {
-        GameObject proj;
+        
         if (reloadTimer > 0)
         {
             reloadTimer -= Time.deltaTime;
@@ -36,13 +37,61 @@ public class PlayerShot : AWeapon
             {
                 reloadTimer = reloadTimeCurrent;
                 //levelWeapon.LevelUp();
-                proj = Instantiate(projectile, spawnPoint.transform.position, Quaternion.identity);
-                proj.GetComponent<ProjectileMove>().Init(lifetimeCurrent, damageCurrent, sizeCurrent, speedCurrent);
+                StartCoroutine(Salva());
             }
         }
 
 
 
     }
+    IEnumerator Salva()
+    {
 
+        GameObject proj;
+        for (int i = 0; i < numberProjectileCurrent; i++)
+        {
+            proj = Instantiate(projectile, spawnPoint.transform.position, Quaternion.identity);
+            proj.GetComponent<ProjectileMove>().Init(lifetimeCurrent, damageCurrent, sizeCurrent, speedCurrent);
+            yield return new WaitForSeconds(0.1f);
+        }
+
+
+
+        
+    }
+
+    public void AddProjectile()
+    {
+        numberProjectileCurrent++;
+        
+        
+
+    }
+
+    public void AddDamage()
+    {
+        damageCurrent *= 1.5f;
+
+    }
+
+    public void AddSpeed()
+    {
+        speedCurrent *= 1.2f;
+    }
+
+    public void AddLifetime()
+    {
+        lifetimeCurrent *= 1.2f;
+    }
+
+    public void DecreaseReload()
+    {
+        reloadTimeCurrent *= 0.8f;
+    }
+
+    public void AddSize()
+    {
+        sizeCurrent *= 1.2f;
+
+    }
 }

@@ -27,7 +27,7 @@ public class ProjectileMove : MonoBehaviour
         coll = GetComponent<Collider2D>();
         var enemies = FindObjectsOfType<AEnemy>();
         float minDist = float.MaxValue;
-        GameObject closestEnemy = this.gameObject;
+        GameObject closestEnemy = null;
         foreach (var enemy in enemies)
         {
             if ((enemy.transform.position - transform.position).magnitude < minDist)
@@ -37,9 +37,17 @@ public class ProjectileMove : MonoBehaviour
             }
         }
 
-        target = closestEnemy;
+        if (closestEnemy)
+        {
+            target = closestEnemy;
         
-        dir = (target.transform.position - transform.position).normalized;
+            dir = (target.transform.position - transform.position).normalized;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
 
     }
 
