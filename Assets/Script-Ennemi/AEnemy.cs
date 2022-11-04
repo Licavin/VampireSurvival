@@ -41,6 +41,9 @@ public abstract class AEnemy : MonoBehaviour
     [SerializeField]
     protected GameObject spawnPointGemme;
 
+    [SerializeField]
+    protected AudioSource audio;
+
     private void Awake()
     {
         col =GetComponent<BoxCollider2D>();
@@ -74,7 +77,7 @@ public abstract class AEnemy : MonoBehaviour
     }
     public void Damage(float damage)
     {
-        
+        audio.Play();
         hpCurrent -= damage;
         StartCoroutine(DamageVisual());
         if (hpCurrent<=0)
