@@ -27,6 +27,7 @@ public class PlayerControl : NetworkBehaviour
     public Animator animator;
     public Camera currentCam;
     public GameObject canvas;
+
     public GameObject canvasDeath;
 
     private void Start()
@@ -41,7 +42,9 @@ public class PlayerControl : NetworkBehaviour
             canvas.SetActive(false);
             EnemyManager.Instance.player = gameObject;   
         }
-        
+
+        canvasDeath = FindObjectOfType<Add>().gameObject;
+
     }
 
     private void Update()
@@ -61,7 +64,7 @@ public class PlayerControl : NetworkBehaviour
 
     public void PlayerDead()
     {
-        canvasDeath.SetActive(true);
+        canvasDeath.GetComponent<Add>().ActivatePanel();
     }
 
     private void UpdateServeur()
