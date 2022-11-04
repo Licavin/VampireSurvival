@@ -41,6 +41,10 @@ public abstract class AWeapon : MonoBehaviour
         reloadTimeCurrent =reloadTimeDefault;
         sizeCurrent = sizeDefault;
     }
+    public void LevelUP()
+    {
+        levelWeapon.LevelUp();
+    }
 
 }
 
@@ -50,14 +54,20 @@ public class LevelWeapon
     public int levelcurrent;
     public int levelMax;
     public List<UnityEvent> unityEvents;
+    public UnityEvent maxLevel;
 
     public void LevelUp()
     {
         if (levelcurrent<levelMax)
         {
             unityEvents[levelcurrent].Invoke();
+            levelcurrent++;
+            if (levelcurrent==levelMax)
+            {
+                maxLevel.Invoke();
+            }
         }
-        levelcurrent++;
+        
 
     }
 }

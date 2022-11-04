@@ -46,7 +46,7 @@ public class Weapon1 : AWeapon
             if (reloadTimer < 0)
             {
                 lifetimeTimer = lifetimeCurrent;
-                levelWeapon.LevelUp();
+                
                 foreach (var proj in currentProjectiles)
                 {
                     proj.SetActive(true);
@@ -123,4 +123,5 @@ public class Weapon1 : AWeapon
         }
 
     }
+
 }
