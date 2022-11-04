@@ -12,6 +12,7 @@ public class Expcollctible : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             collision.GetComponent<PlayerStats>().AddExp(value);
+            Destroy(gameObject);
         }
     }
 }
