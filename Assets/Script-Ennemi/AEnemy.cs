@@ -42,7 +42,7 @@ public abstract class AEnemy : MonoBehaviour
     protected GameObject spawnPointGemme;
 
     [SerializeField]
-    protected AudioSource audio;
+    UnityEvent playAudio;
 
     private void Awake()
     {
@@ -77,7 +77,7 @@ public abstract class AEnemy : MonoBehaviour
     }
     public void Damage(float damage)
     {
-        audio.Play();
+        playAudio.Invoke();
         hpCurrent -= damage;
         StartCoroutine(DamageVisual());
         if (hpCurrent<=0)

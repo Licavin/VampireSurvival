@@ -173,6 +173,7 @@ MonoBehaviour:
     m_InternalValue: 0
   animator: {fileID: 4162702196439356558}
   currentCam: {fileID: 7384085439723847453}
+  canvas: {fileID: 7435819887197185190}
 --- !u!50 &2979217727468828083
 Rigidbody2D:
   serializedVersion: 4
@@ -1722,6 +1723,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1961210449480241328, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1961210449810348087, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
       propertyPath: m_Size
       value: 0.423
@@ -1858,6 +1863,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &7435819887197185190 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1961210450046872396, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}
+  m_PrefabInstance: {fileID: 8937050726471798762}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &7435819887197185191 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1961210450046872397, guid: c3f9b9afd72dfdc448d1fe4831093f97, type: 3}

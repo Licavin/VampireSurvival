@@ -26,6 +26,7 @@ public class PlayerControl : NetworkBehaviour
 
     public Animator animator;
     public Camera currentCam;
+    public GameObject canvas;
 
     private void Start()
     {
@@ -36,6 +37,7 @@ public class PlayerControl : NetworkBehaviour
         if (!IsOwner)//delet wrong cam and instanciate the good one into the Enemy Manager
         {
             currentCam.gameObject.SetActive(false);
+            canvas.SetActive(false);
             EnemyManager.Instance.player = gameObject;   
         }
         
