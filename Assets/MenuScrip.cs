@@ -10,6 +10,7 @@ public class MenuScrip : MonoBehaviour
     public GameObject ipCanvas;
     public GameObject MenuCanvas;
     public GameObject ErrorCanvas;
+    public GameObject hostIpShow;
 
     bool host;
     bool join;
@@ -37,6 +38,7 @@ public class MenuScrip : MonoBehaviour
 
     public void HostIP()
     {
+        StartCoroutine(IpShow());
         host = true;
         ipCanvas.SetActive(true);
         hostIPPanel.SetActive(true);
@@ -56,6 +58,13 @@ public class MenuScrip : MonoBehaviour
     {
         //MenuCanvas.SetActive(true);
         ipCanvas.SetActive(false);
+    }
+
+    IEnumerator IpShow()
+    {
+        hostIpShow.SetActive(true);
+        yield return new WaitForSeconds(15);
+        hostIpShow.SetActive(false);
     }
 
     public void Quit()

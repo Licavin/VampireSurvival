@@ -27,6 +27,7 @@ public class UiManager : MonoBehaviour
     public GameObject inGameMenu;
     public MenuScrip menuScript;
     public GameObject ipCanvas;
+    public GameObject hostIpShow;
 
     private void Awake()
     {
@@ -50,7 +51,9 @@ public class UiManager : MonoBehaviour
             if (NetworkManager.Singleton.StartHost())
             {
                 Debug.Log("Host started..."); //StartHost
-                //inGameMenu.SetActive(true);
+                                              //inGameMenu.SetActive(true);
+                StartCoroutine(IpShow());
+
             }
             else
             {
@@ -94,5 +97,12 @@ public class UiManager : MonoBehaviour
         untp.ConnectionData.Address = inputFieldAddres.text;
         Debug.Log(inputFieldAddres.text);
         Debug.Log(untp.ConnectionData.Address);
+    }
+
+    IEnumerator IpShow()
+    {
+        hostIpShow.SetActive(true);
+        yield return new WaitForSeconds(15);
+        hostIpShow.SetActive(false);
     }
 }
