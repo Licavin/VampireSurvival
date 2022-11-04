@@ -10,7 +10,7 @@ public class PlayerShot : AWeapon
     public float TimeBetweenShots = 0.5f;  // seconds
     float reloadTimer;
     // Start is called before the first frame update
-
+    public AudioSource audio;
     private void Awake()
     {
         Init();
@@ -50,6 +50,7 @@ public class PlayerShot : AWeapon
         GameObject proj;
         for (int i = 0; i < numberProjectileCurrent; i++)
         {
+            audio.Play();
             proj = Instantiate(projectile, spawnPoint.transform.position, Quaternion.identity);
             proj.GetComponent<ProjectileMove>().Init(lifetimeCurrent, damageCurrent, sizeCurrent, speedCurrent);
             yield return new WaitForSeconds(0.1f);
