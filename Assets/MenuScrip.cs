@@ -11,6 +11,7 @@ public class MenuScrip : MonoBehaviour
     public GameObject MenuCanvas;
     public GameObject ErrorCanvas;
     public GameObject hostIpShow;
+    public GameObject lostCanvas;
 
     bool host;
     bool join;
@@ -65,6 +66,12 @@ public class MenuScrip : MonoBehaviour
         hostIpShow.SetActive(true);
         yield return new WaitForSeconds(15);
         hostIpShow.SetActive(false);
+    }
+
+    public void defaite()
+    {
+        lostCanvas.SetActive(false);
+        MenuCanvas.SetActive(true);
     }
 
     public void Quit()
