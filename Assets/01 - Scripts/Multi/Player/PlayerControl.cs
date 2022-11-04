@@ -58,6 +58,11 @@ public class PlayerControl : NetworkBehaviour
 
     }
 
+    public void PlayerDead()
+    {
+        canvas.SetActive(true);
+    }
+
     private void UpdateServeur()
     {
         transform.position = new Vector2(transform.position.x + leftRightPosition.Value, transform.position.y + forwardBackPosition.Value);

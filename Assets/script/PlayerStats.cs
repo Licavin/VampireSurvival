@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Events;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -27,6 +28,8 @@ public class PlayerStats : MonoBehaviour
     public TMP_Text text;
     public Scrollbar scrollbarExp;
     public Scrollbar scrollbarLife;
+
+    public UnityEvent OnDeath;
     private void Awake()
     {
         Timer = 0;
@@ -58,7 +61,7 @@ public class PlayerStats : MonoBehaviour
 
     private void Death()
     {
-
+        OnDeath.Invoke();
     }
 
     public void Heal()
