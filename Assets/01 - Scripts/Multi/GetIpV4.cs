@@ -20,7 +20,7 @@ public class GetIpV4 : MonoBehaviour
         {
             if (ip.AddressFamily == AddressFamily.InterNetwork)
             {
-                hintText.text = ip.ToString();
+                hintText.text = "Your IP : " +  ip.ToString();
                 return ip.ToString();
             }
         }
