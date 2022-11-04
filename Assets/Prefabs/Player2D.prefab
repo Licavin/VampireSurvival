@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1f8ea1490bc39d478a5cfe1b1be0e48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 0.05
+  walkSpeed: 0.01
   defaultPositionRange: {x: -4, y: 4}
   forwardBackPosition:
     m_InternalValue: 0
