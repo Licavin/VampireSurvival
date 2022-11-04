@@ -73,7 +73,7 @@ public class UiManager : MonoBehaviour
             {
                 //GameManager.Instance.PlayerJoin();
                 Debug.Log("client started...");//Start join
-                inGameMenu.SetActive(true);
+                //inGameMenu.SetActive(true);
 
             }
             else
