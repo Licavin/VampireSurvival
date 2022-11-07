@@ -41,9 +41,12 @@ public abstract class AEnemy : MonoBehaviour
     [SerializeField]
     protected GameObject spawnPointGemme;
 
+<<<<<<< HEAD
     [SerializeField]
     UnityEvent playAudio;
 
+=======
+>>>>>>> parent of cd739a6 (Merge branch 'main' of https://github.com/Licavin/VampireSurvival)
     private void Awake()
     {
         col =GetComponent<BoxCollider2D>();
@@ -77,7 +80,11 @@ public abstract class AEnemy : MonoBehaviour
     }
     public void Damage(float damage)
     {
+<<<<<<< HEAD
         playAudio.Invoke();
+=======
+        
+>>>>>>> parent of cd739a6 (Merge branch 'main' of https://github.com/Licavin/VampireSurvival)
         hpCurrent -= damage;
         StartCoroutine(DamageVisual());
         if (hpCurrent<=0)

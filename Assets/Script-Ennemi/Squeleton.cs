@@ -16,7 +16,6 @@ public class Squeleton : AEnemy
 
     private void Update()
     {
-        
         Move();
         spriteRenderer.flipX = target.transform.position.x < transform.position.x;
     }

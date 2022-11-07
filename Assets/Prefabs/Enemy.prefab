@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 2550115927059764610}
   - component: {fileID: 6846860550696970905}
   - component: {fileID: -7192106161202466788}
-  - component: {fileID: -8702895930573599982}
   m_Layer: 3
   m_Name: Enemy
   m_TagString: Enemy
@@ -231,6 +230,7 @@ MonoBehaviour:
   AlwaysReplicateAsRoot: 0
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+<<<<<<< HEAD
 --- !u!82 &-8702895930573599982
 AudioSource:
   m_ObjectHideFlags: 0
@@ -327,6 +327,8 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+=======
+>>>>>>> parent of cd739a6 (Merge branch 'main' of https://github.com/Licavin/VampireSurvival)
 --- !u!1 &7320351569241180048
 GameObject:
   m_ObjectHideFlags: 0
